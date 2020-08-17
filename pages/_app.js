@@ -13,4 +13,4 @@ const url = 'https://graphql.anilist.co';
 export default withUrqlClient((_ssrExchange, ctx) => ({
   // ...add your Client options here
   url
-}))(MyApp);
+}), { ssr: true })(MyApp);
