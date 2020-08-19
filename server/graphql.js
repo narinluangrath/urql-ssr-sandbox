@@ -21,9 +21,8 @@ const schema = makeExecutableSchema({
   resolvers,
 });
 
-const createGraphqlServer = ({ logger }) => new ApolloServer({
+const createGraphqlServer = () => new ApolloServer({
   schema,
-  logger,
   cors: { origin: false }
 });
 
