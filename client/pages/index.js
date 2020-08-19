@@ -3,9 +3,7 @@ import { useQuery } from 'urql';
 
 const query = `
 {
-  Media(id: 1) {
-    id
-  }
+  Text
 }
 `;
 
